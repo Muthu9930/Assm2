@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+{% block content %} 
+<h1> List of User Links </h1>
+{% if user_list %} 
+     <ul>
+       {% for user in user_list %} 
+       <li>
+         {{ user }}
+       </li> 
+       {% endfor %} 
+    </ul> 
+  {% else %} 
+  	There aren't any user links!
+  {% endif %} 
+
+{% endblock %}
